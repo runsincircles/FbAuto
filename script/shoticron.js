@@ -9,7 +9,7 @@ module.exports.config = {
 		cooldown: 0,
 		role: 2,
 		description: "Autosend random girl",
-		hasPrefix: false,
+		hasPrefix: true,
 		usages: "&shoticronv2 {p} <setinterval> <time> <hour> <minutes><seconds>",
 		aliases: ["shot"]
 };
