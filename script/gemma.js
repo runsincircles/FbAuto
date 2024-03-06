@@ -6,10 +6,10 @@ module.exports.config = {
 		role: 0,
 		credits: "hazey",
 		description: "EDUCATIONAL",
-		hasPrefix: false,
+		hasPrefix: true,
 		usages: "",
 		cooldown: 5,
-		aliases: ["ai88", "ai99"],
+		aliases: ["gem", "ai99"],
 };
 
 module.exports.run = async function ({ api, event, args }) {
