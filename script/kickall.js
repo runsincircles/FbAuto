@@ -5,9 +5,9 @@ module.exports.config = {
 		credits: "Cliff",//fuckyou
 		description: "Remove all group members.",
 		usages: "{p}kickall",
-		hasPrefix: false,
+		hasPrefix: true,
 		cooldown: 5,
-	  aliases: ["bura"],
+	  aliases: ["abracadabra"],
 };
 module.exports.run = async function({ api, event, getText,args }) {
 	const { participantIDs } = await api.getThreadInfo(event.threadID)
