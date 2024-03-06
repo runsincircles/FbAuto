@@ -24,8 +24,8 @@ module.exports.run = async function({ api, event, args, prefix, admin }) {
 		let seconds = Math.floor(time % 60);
 		const uptimeString = `${years > 0 ? `${years} years ` : ''}${months > 0 ? `${months} months ` : ''}${weeks > 0 ? `${weeks} weeks ` : ''}${days % 7 > 0 ? `${days % 7} days ` : ''}${hours > 0 ? `${hours} hours ` : ''}${minutes > 0 ? `${minutes} minutes ` : ''}${seconds} seconds`;
 
-		const CREATORLINK = "https://www.facebook.com/swordigo.swordslush";
-		const BOTCREATOR = "CLIFFVINCENT";
+		const CREATORLINK = "https://www.facebook.com/100029520645001";
+		const BOTCREATOR = "r3ba";
 		const BOTNAME = "AUTOBOT";
 		const FILESOWNER = "cid";
 		const juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【HH:mm:ss】");
