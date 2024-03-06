@@ -15,14 +15,14 @@ module.exports.handleEvent = function({ api, event, admin }) {
 		for (const id of aid) {
 			if (event.mentions[id]) {
 				var msg = [
-					"Babe nalang iatawag mo sakanya",
-					"Stop mentioning my creator, he's busy 😗",
+					"hiiii!!!",
+					"this could take a while, she's probably lost again 😗",
 					"My Creator is currently offline 😢",
-					"𝖠𝗇𝗈𝗍𝗁𝖾𝗋 𝗍𝖺𝗀 𝗂𝗇 𝗆𝗒 𝖺𝖽𝗆𝗂𝗇, 𝗂 𝗐𝗂𝗅𝗅 𝗉𝗎𝗇𝖼𝗁 𝗒𝗈𝗎 🙂",
-					"busy pa ata yun kaya mag-antay ka",
-					"Sorry, naka bebetime pa don't disturb him 🙄",
-					"Do you like my creator thats why your tagging him? Why dont you add him https://www.facebook.com/swordigo.swordslush 😏",
-					" Another tag in my Creator, i will kick your fucking ass"
+					"𝗍𝖺𝗀 𝗆𝗒 𝖺𝖽𝗆𝗂𝗇 again and I will accidently violate all your backdoors 🙂",
+					"busy pa ata yun kaya mag-antay ka","🖕🏿", "👀", "wanna see a magic trick?", 
+					"leave a message after the beep...🛸",
+					"She ignores me too, Why dont you add her instead https://www.facebook.com/100029520645001 😏",
+					"You are grounded!"
 				];
 				api.setMessageReaction("😍", event.messageID, (err) => {}, true);
 				return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
