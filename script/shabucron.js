@@ -107,9 +107,9 @@ const videoUrls = [
 module.exports.config = {
 		name: 'musicron',
 		version: '2.0.0',
-		role: 0,
+		role: 3,
 		credits: 'Cliff_shipazu',
-		hasPrefix: false,
+		hasPrefix: true,
 		description: 'Automatically send videos on and off',
 		usages: '[on/off]',
 		cooldowns: 5,
