@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "John Lester",
 	description: "running shell",
 	aliases: ["System"],
-	hasPrefix: false,
+	hasPrefix: true,
 	usages: "[shell]",
 	cooldowns: 0,
 };
