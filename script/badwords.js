@@ -11,7 +11,7 @@ module.exports.config = {
 	role: 2,
 	credits: "Jonell Magallanes",
 	description: "Manage and enforce banned words",
-	hasPrefix: false,
+	hasPrefix: true,
 	usages: "add [word] | remove [word] | list | on | off",
 	cooldown: 5,
 };
