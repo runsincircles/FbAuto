@@ -8,7 +8,7 @@ module.exports.config = {
 	role: 1, // Set the required role to 1 (non-admin user)
 	credits: "Jonell Magallanes and BLUE", // Remodel nanaman
 	description: "Automatically detect and act on spam",
-	hasPrefix: false,
+	hasPrefix: true,
 	aliases: ["spam"],
 	usage: "",
 	cooldown: 5,
@@ -29,7 +29,7 @@ module.exports.handleEvent = function({ api, event, admin }) {
 	if (!messageCounts[threadID][senderID]) {
 		messageCounts[threadID][senderID] = {
 			count: 1,
-			timer: setTimeout(() => {
+			timer: setTimeout((60) => {
 				delete messageCounts[threadID][senderID];
 			}, spamInterval)
 		};
@@ -40,7 +40,7 @@ module.exports.handleEvent = function({ api, event, admin }) {
 			if (!admin.includes(senderID)) {
 				api.removeUserFromGroup(senderID, threadID);
 				api.sendMessage({
-					body: "",
+					body: "maam/sir you are Grounded!",
 					mentions: [{
 						tag: senderID,
 						id: senderID
